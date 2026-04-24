@@ -125,34 +125,7 @@ aris/
 
 ---
 
-## 六、工作流模板
-
-`templates/` 目录提供即用型 Markdown 模板，覆盖以下工作流：
-
-### 研究管线（Research Pipeline）
-
-| 模板 | 对应工作流 | 用途 |
-|------|-----------|------|
-| `RESEARCH_BRIEF_TEMPLATE.md` | Workflow 1 | 详细研究方向文档输入 |
-| `RESEARCH_CONTRACT_TEMPLATE.md` | Workflow 1 | 定义问题边界、非目标、时间线 |
-| `EXPERIMENT_PLAN_TEMPLATE.md` | Workflow 1.5 | Claim-driven 实验路线图 |
-| `NARRATIVE_REPORT_TEMPLATE.md` | Workflow 3 | 研究叙事（Claims + 实验 + 结果） |
-| `PAPER_PLAN_TEMPLATE.md` | Workflow 3 | 预置论文大纲 |
-| `CLAUDE_MD_TEMPLATE.md` | 全部工作流 | 项目面板（Pipeline Status） |
-| `MANIFEST_TEMPLATE.md` | 全部工作流 | 输出跟踪清单 |
-
-### 专利管线（Patent Pipeline）
-
-| 模板 | 用途 |
-|------|------|
-| `INVENTION_BRIEF_TEMPLATE.md` | 发明披露（技术问题、方案、优势、附图） |
-| `PATENT_CLAIMS_TEMPLATE.md` | 权利要求层次表（CN/US/EP 示例） |
-| `PATENT_SPECIFICATION_TEMPLATE.md` | 说明书骨架（含全部必要章节） |
-
----
-
-## 七、推荐工作流
-
+## 六、使用场景
 ### 场景 A：「明天要汇报，但我只有一个话题」
 
 ```
@@ -196,7 +169,7 @@ mermaid-diagram  或  paper-illustration
 
 ---
 
-## 八、关键依赖
+## 七、关键依赖
 
 本套件假设运行环境具备以下条件（与主项目一致）：
 
@@ -213,7 +186,7 @@ mermaid-diagram  或  paper-illustration
 
 ---
 
-## 九、快速索引
+## 八、快速索引
 
 | 我想做... | 使用的技能 | 查看文件 |
 |-----------|-----------|---------|
@@ -227,19 +200,17 @@ mermaid-diagram  或  paper-illustration
 
 ---
 
-## 十、使用示例
+## 九、使用示例
 
 ```bash
 # 1. 进入项目目录
 cd aris
 
 # 2. 各技能通过 ARIS agent 调用，例如：
-# /skill:presentation-slides "QUICK_REVIEW.md" --pages 12 --minutes 15
-# /skill:paper-slides "paper/" --talk_type spotlight --venue NeurIPS
-# /skill:paper-poster "paper/" --venue ICML --size A0
-# /skill:lecture-script "slides/slides.pdf" --minutes 15 --language zh
-# /skill:mermaid-diagram "系统架构图：包含数据流、模型训练和推理三个模块"
 # /skill:quick-lit-review "Neural Radiance Fields" --depth standard
+# /skill:presentation-slides "QUICK_REVIEW.md" --pages 12 --minutes 15
+# /skill:lecture-script "slides/slides.pdf" --minutes 15 --language zh
+ 
 ```
 
 ---
